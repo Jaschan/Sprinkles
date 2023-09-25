@@ -1,6 +1,6 @@
 import Discord from 'discord.js';
-import { BOSS_DATA_DIRECTORY, BOT_NAME, DEFAULT_COMMAND_PREFIX, events } from './globals/constants';
-import * as commandManager from './util/commandManager';
+import { BOSS_DATA_DIRECTORY, BOT_NAME, DEFAULT_COMMAND_PREFIX, events } from './globals/constants.js';
+import * as commandManager from './util/commandManager.js';
 import {
   convertToTimestamp,
   convertUnixTimeToCalendarFormat,
@@ -8,7 +8,7 @@ import {
   getCurrentTimeInHMAFormat,
   readFile,
   writeFile,
-} from './util/common';
+} from './util/common.js';
 
 const discordClient = new Discord.Client();
 let reminderChannels = [];
@@ -90,4 +90,5 @@ const onMessageReceived = (message) => {
 
 discordClient.once(events.READY, onReady);
 discordClient.on(events.MESSAGE, onMessageReceived);
-discordClient.login(`${process.env.TOKEN}`);
+discordClient.login(`NzYxMzM5Nzg2NTEwMDczOTI4.GqUTmG.IWP1y-itmT6UBbSDlje7Y2iZchlgF05c0f-U2Y`);
+//discordClient.login(`${process.env.TOKEN}`);

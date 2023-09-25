@@ -8,7 +8,7 @@ import {
   convertUnixTimeToHMAFormat,
   sendBossAddedEmbed,
   sortArray,
-} from '../util/common';
+} from '../util/common.js';
 export const name = 'mvp';
 export const description = 'Ragnarok Online MVP helper';
 

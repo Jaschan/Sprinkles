@@ -1,4 +1,4 @@
-import { checkAlias, checkInput, sendBossInfoEmbed } from '../util/common';
+import { checkAlias, checkInput, sendBossInfoEmbed } from '../util/common.js';
 
 export const name = 'info';
 export const description = 'To check boss information';
